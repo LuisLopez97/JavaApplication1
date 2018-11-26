@@ -18,39 +18,52 @@ finales(feliz).
 finales(chistoso).
 
 %CUENTO SIN PERSONAJES 1
-cuentameprincipio(Lugar):-lugar(Lugar),
+cuentameprincipio(Lugar):-
+        lugar(Lugar),
 open('principio.txt',write,Z),
 set_output(Z),
 write('Long long time ago …. en un misterioso '),
 write(Lugar),
 write(' '),
-write('se encontraba una misteriosa piedra, la cual era conocida como la piedra Filosofal.
-Esa piedra otorgaba poderes ilimitados a quién la poseia.'),
+writeln('Se encontraba una misteriosa piedra, la cual era conocida '),
+write('como la piedra Filosofal.'),
+write('Esa piedra otorgaba poderes ilimitados a quién la poseia.'),
 put_char('.'),
 close(Z).
 
 %CUENTO SIN PERSONAJES 2
-cuentameprincipio(Lugar):-lugar(Lugar),
+cuentameprincipio(Lugar):-
+        lugar(Lugar),
 open('principio.txt',write,Z),
 set_output(Z),
 write('Érase una vez, en un cálido desierto, se encontraba un '),
 write(Lugar),
-write(' Dentro de este majestuoso lugar, había una espada clavada en un árbol de oro.
-Esta espada estuvo allí durante miles de anios .'),
-put_char('.'),
-close(Z).
-%CUENTO SIN PERSONAJES 3
-cuentameprincipio(Lugar):-lugar(Lugar),
-open('principio.txt',write,Z),
-set_output(Z),
-write('En un remoto '),
-write(Lugar),
-write(' existia la leyenda de una dulceria barata. Lo buscaron en Google Maps pero no aparecia'),
+write(' '),
+writeln('Dentro de este majestuoso lugar, había una espada clavada '),
+write('en un árbol de oro.'),
+writeln('Esta espada estuvo allí durante miles de anios .'),
 put_char('.'),
 close(Z).
 
+%CUENTO SIN PERSONAJES 3
+cuentameprincipio(Lugar):-
+                lugar(Lugar),
+open('principio.txt',write,Z),
+set_output(Z),
+write('En un remoto'),
+write(Lugar),
+write(' '),
+writeln('existia la leyenda de'),
+write('una dulceria barata.'),
+writeln('Lo buscaron en Google Maps '),
+write('pero no aparecia'),
+put_char('.'),
+close(Z).
+
+
 %CUENTO SIN PERSONAJES 4
-cuentameprincipio(Lugar):-lugar(Lugar),
+cuentameprincipio(Lugar):-
+                lugar(Lugar),
 open('principio.txt',write,Z),
 set_output(Z),
 write('En un remoto '),
@@ -60,35 +73,43 @@ put_char('.'),
 close(Z).
 
 
-cuentameparte1(Lugar):-lugar(Lugar),
+cuentameparte1(Lugar):-
+        lugar(Lugar),
 open('parte1.txt',write,Z),
 set_output(Z),
-write('Los pueblerinos del lugar, se encontraban aterrados de que nuestro héroe quisiera quedarse con el objeto,
-ya que creían en una maldición. Se creía que ésta maldición robaba las almas de aquellos que permitieron que se llevaran el artefacto.
-Nuestro protagonista decidió irse del '),
+write('Los pueblerinos del lugar, se encontraban aterrados de que nuestro héroe.'),
+writeln('quisiera quedarse con el objeto, ya que creían en una maldición.  '),
+writeln('Se creía que ésta maldición robaba las almas de aquellos que permitieron que se llevaran el artefacto '),
+writeln(' Nuestro protagonista decidió irse del '),
 write(Lugar),
-write(' ese día. Pero lo que los pueblerinos no sabían es que ya se había robado la piedra.'),
+write(''),
+write('ese día. Pero lo que los pueblerinos no sabían es que ya se había robado la piedra.'),
 put_char('.'),
 close(Z).
 
-cuentameparte1(Lugar):-lugar(Lugar),
+cuentameparte1(Lugar):-
+        lugar(Lugar),
 open('parte1.txt',write,Z),
 set_output(Z),
-write('Los habitantes estaban fascinados de que por fín llegara una persona que estuviese dispuesta a llevarse el artefacto.
-Pero todo era muy extraño. Ya que se veía las sospechosas miradas de las personas que se encontraban,
-a su alrededor por lo que decidió seguir su camino. Al marcharse del '),
+write('Los habitantes estaban fascinados de que por fín llegara una '),
+writeln('persona que estuviese dispuesta a llevarse el artefacto.'),
+writeln('Pero todo era muy extraño. '),
+writeln('Ya que se veía las sospechosas miradas de las personas que se encontraban'),
+writeln(' a su alrededor por lo que decidió seguir su camino. '),
+writeln('Al marcharse del '),
 write(Lugar),
-write( 'se sentía algo curioso por lo sucedido …
-por lo que planeó entrar a la bóveda durante la noche a robarse ese artefacto.
-Una vez que todos estaban dormidos, se dirigió a la habitación donde estaba el artefacto.
-Se escabulló por un pasadizo secreto que estaba detrás de un árbol. Al entrar a la habitación
-sustrajo el artefacto, corrió hacia su Lamborguini Diablo, se subió al vehículo y se marchó'),
+write(' '),
+write('se sentía algo curioso por lo sucedido … por lo que planeó entrar a la bóveda durante la noche a robarse '),
+writeln('ese artefacto.'),
+writeln('Una vez que todos estaban dormidos, se dirigió a la habitación donde estaba el artefacto. '),
+writeln('Se escabulló por un pasadizo secreto que estaba detrás de un árbol. Al entrar a la habitación '),
+write('sustrajo el artefacto, corrió hacia su Lamborguini Diablo, se subió al vehículo y se marchó'),
 put_char('.'),
 close(Z).
 
 cuentameparte1(Lugar):-
             lugar(Lugar),
-open(‘parte1.txt',write,Z),
+open('parte1.txt',write,Z),
 set_output(Z),
 write('El día era soleado en '),
 write(Lugar),
@@ -113,7 +134,7 @@ close(Z).
 
 
 cuentameparte2(Lugar):-
-            lugar(Lugar),
+        lugar(Lugar),
 open('parte2.txt',write,Z),
 set_output(Z),
 write('Durante el viaje recordó sobre aquella maldición de la que tanto hablaban.'),
@@ -129,7 +150,7 @@ put_char('.'),
 close(Z).
 
 cuentameparte2(Lugar):-
-            lugar(Lugar),
+        lugar(Lugar),
 open('parte2.txt',write,Z),
 set_output(Z),
 write('Durante su viaje por la carretera su Lambo comienza a fallar y'),
@@ -171,7 +192,7 @@ close(Z).
 
 
 cuentameparte3(Lugar):-
-            lugar(Lugar),
+        lugar(Lugar),
 open('parte3.txt',write,Z),
 set_output(Z),
 write(' Al llegar vió que todos en el pueblito estaban totalmente descuartizados.'),
@@ -184,7 +205,7 @@ put_char('.'),
 close(Z).
 
 cuentameparte3(Lugar):-
-            lugar(Lugar),
+        lugar(Lugar),
 open('parte3.txt',write,Z),
 set_output(Z),
 write('Tomó su espada, se armó de valor y emprendió su caminata hacia'),
@@ -198,7 +219,7 @@ put_char('.'),
 close(Z).
 
 cuentameparte3(Lugar):-
-            lugar(Lugar,Tipol),
+            lugar(Lugar),
 open('parte3.txt',write,Z),
 set_output(Z),
 write('Cuando ya estaban por rendirse'),
@@ -225,7 +246,7 @@ close(Z).
 
 
 cuentamefinalchistoso(Lugar,Final):-
-            lugar(Lugar),
+        lugar(Lugar),
 finales(Final),
 open('final.txt',write,Z),
 set_output(Z),
@@ -239,7 +260,7 @@ put_char('.'),
 close(Z).
 
 cuentamefinalchistoso(Lugar,Final):-
-            lugar(Lugar),
+        lugar(Lugar),
 finales(Final),
 open('final.txt',write,Z),
 set_output(Z),
@@ -252,9 +273,23 @@ write('muy contento y silbando '),
 put_char('.'),
 close(Z).
 
+
+cuentamefinalchistoso(Lugar,Final):-
+            lugar(Lugar),
+finales(Final),
+open('final.txt',write,Z),
+set_output(Z),
+write('Buscan en su bolsa y ven que'),
+writeln('no traían dinero así que se '),
+writeln('pelean entre ellos y se van de'),
+write(Lugar),
+writeln('Luego se dieron cuento de que todo fué muy'),
+writeln(Final),
+put_char('.'),
+close(Z).
 cuentamefinalchistoso(Lugar):-
             lugar(Lugar),
-final(Final),
+finales(Final),
 open('final.txt',write,Z),
 set_output(Z),
 write('De tanto acelerar sus maquinas'),
@@ -264,29 +299,17 @@ writeln('Las maquinas formaron parte'),
 writeln('de '),
 write(Lugar),
 write(' '),
-write(‘concluyendo al fin que todo era muy’),
+write('concluyendo al fin que todo era muy'),
 write(Final),
-write(‘.’),
+write('.'),
 write(' Fin'),
 put_char('.'),
 close(Z).
 
-cuentamefinalchistoso(Lugar,Final):-
-            lugar(Lugar),
-final(Final),
-open('final.txt',write,Z),
-set_output(Z),
-write('Buscan en su bolsa y ven que'),
-writeln('no traían dinero así que se '),
-writeln('pelean entre ellos y se van de'),
-write(Lugar),
-writeln(‘Luego se dieron cuento de que todo fué muy’),
-writeln(Final),
-put_char('.'),
-close(Z).
+
 
 cuentamefinaldramatico(Lugar,Final):-
-            lugar(Lugar),
+        lugar(Lugar),
 finales(Final),
 open('final.txt',write,Z),
 set_output(Z),
@@ -302,7 +325,7 @@ put_char('.'),
 close(Z).
 
 cuentamefinaldramatico(Lugar,Final):-
-            lugar(Lugar),
+        lugar(Lugar),
 finales(Final),
 open('final.txt',write,Z),
 set_output(Z),
@@ -317,7 +340,7 @@ close(Z).
 
 cuentamefinaldramatico(Lugar,Final):-
             lugar(Lugar),
-final(Final),
+finales(Final),
 open('final.txt',write,Z),
 set_output(Z),
 write('Entran en la tienda y preguntan por '),
@@ -328,14 +351,14 @@ writeln('Se cortan sus venas, se mueren y los'),
 writeln('sepultan en'),
 write(' '),
 write(Lugar),
-write(‘concluyendo todo que fue’)
-write(Final).
+write('concluyendo todo que fue'),
+write(Final),
 put_char('.'),
 close(Z).
 
 cuentamefinaldramatico(Lugar):-
             lugar(Lugar),
-final(Final),
+finales(Final),
 open('final.txt',write,Z),
 set_output(Z),
 write(' Las maquinas pasaron por encima'),
@@ -343,13 +366,15 @@ writeln('de los pekes y los trituraron'),
 writeln(Lugar),
 write(' '),
 write('ya no volvió a ser el mismo'),
-write(‘y terminó siendo un lugar’),
+write('y terminó siendo un lugar'),
 write(Final),
 put_char('.'),
 close(Z).
 
+
+
 cuentamefinaltriste(Lugar,Final):-
-            lugar(Lugar),
+        lugar(Lugar),
 finales(Final),
 open('finalt.txt',write,Z),
 set_output(Z),
@@ -362,7 +387,7 @@ put_char('.'),
 close(Z).
 
 cuentamefinaltriste(Lugar,Final):-
-            lugar(Lugar),
+        lugar(Lugar),
 finales(Final),
 open('final.txt',write,Z),
 set_output(Z),
@@ -379,8 +404,8 @@ close(Z).
 
 cuentamefinaltriste(Lugar,Final):-
             lugar(Lugar),
-final(Final),
-open(‘final.txt',write,Z),
+finales(Final),
+open('final.txt',write,Z),
 set_output(Z),
 write('Vieron un cartel en la puerta'),
 writeln('decía ...'),
@@ -388,19 +413,19 @@ write('Apertura mañana, los esperamos.'),
 writeln('Sus ojitos todos brillosos '),
 writeln('comenzaron a lagrimear.'),
 writeln('Se dieron media vuelta y se fueron'),
-writeln('a su casita’),
-write(‘Todo),
+writeln('a su casita'),
+write('todo'),
 write(Final),
-write(‘en '),
+write('en '),
 write(Lugar),
 write(' '),
-write('amargamente. Fin'),
+write('amargamente'),
 put_char('.'),
 close(Z).
 
 cuentamefinaltriste(Lugar):-
             lugar(Lugar),
-final(Final),
+finales(Final),
 open('final.txt',write,Z),
 set_output(Z),
 write('Los pekes no podian hacer nada'),
@@ -408,11 +433,14 @@ writeln('contra esas maquinas'),
 writeln('Solo les quedó retirarse de'),
 writeln(Lugar),
 write(' '),
+write(Final),
 put_char('.'),
 close(Z).
 
+
+
 cuentamefinalfeliz(Lugar,Final):-
-            lugar(Lugar),
+        lugar(Lugar),
 finales(Final),
 open('final.txt',write,Z),
 set_output(Z),
@@ -426,7 +454,7 @@ put_char('.'),
 close(Z).
 
 cuentamefinalfeliz(Lugar,Final):-
-            lugar(Lugar),
+        lugar(Lugar),
 finales(Final),
 open('final.txt',write,Z),
 set_output(Z),
@@ -444,7 +472,7 @@ close(Z).
 
 cuentamefinalfeliz(Lugar,Final):-
             lugar(Lugar),
-final(Final),
+finales(Final),
 open('final.txt',write,Z),
 set_output(Z),
 write('Al entrar ven que las interminables mesas '),
@@ -462,8 +490,8 @@ close(Z).
 
 cuentamefinalfeliz(Lugar):-
             lugar(Lugar),
-final(Final),
-open(‘final.txt',write,Z),
+finales(Final),
+open('final.txt',write,Z),
 set_output(Z),
 write('Los pekes silbaron la'),
 writeln('Marcha Imperial y desde el cielo'),
@@ -472,6 +500,8 @@ writeln('las maquinas y'),
 write(Lugar),
 write(' '),
 writeln('se salva de la destrucción.Fin'),
+writeln('y todo se vuelve'),
+write(Final),
 put_char('.'),
 close(Z).
 
@@ -494,7 +524,7 @@ cuentameparte1(Lugar,Personaje1):-  rol(Personaje1),
                                     set_output(Z),
                                     write('De repente se enconto con '),
                                     write(Lugar),write(' '),write(','),
-                                    write(' a lo cual le llama la atencion y fue a investigar').
+                                    write(' a lo cual le llama la atencion y fue a investigar'),
                                     put_char('.'),
                                     close(Z).
 
@@ -575,25 +605,8 @@ cuentamefinalchistoso(Lugar,Personaje1,Final):- rol(Personaje1),
                                                     close(Z).
 
 %CUENTO CON DOS PERSONAJES
-cuentameprincipio(Lugar,Personaje1,Personaje2):-rol(Personaje1),
-                                                 rol(Personaje2),
-                                                 lugar(Lugar),
-                                                 open('principio.txt',write, Z),
-                                                 set_output(Z),
-                                                write('Habia una vez, en tiempos muy obscuros'),
-                                                write('en un'),
-                                                write(Lugar),
 
-                                                write('deambulaba'),
-                                                write(Personaje1),
-                                                write('que es'),
-                                                                               writeln('buscando la llave maestra, la cual le otorgaria el poder de cambiar el mundo. Lo que no sabia es que'),
-                                                write(Personaje2),
-                                                write('tambien estaba en su busqueda, el era'),
-                                                                                                put_char('.'),
-                                                close(Z).
-
-cuentameprincipio(Lugar,Personaje1,Personaje2):-rol(Personaje1),
+cuentameprincipio(Personaje1,Personaje2, Lugar):-rol(Personaje1),
                                                  rol(Personaje2),
                                                  lugar(Lugar),
                                                  open('principio.txt',write, Z),
@@ -601,18 +614,34 @@ cuentameprincipio(Lugar,Personaje1,Personaje2):-rol(Personaje1),
                                                  write('Era 1670'),
                                                 write('en'),
                                                 write(Lugar),
-                                                write('un lugar muy'),
                                                 write('vivian dos seres:'),
                                                 write(Personaje1),
-                                                write('quien era'),
-                                                                                        writeln('y'),
+                                                writeln('y'),
                                                 write(Personaje2),
-                                                write('que a diferencia del anterior es'),
-                                                                                         put_char('.'),
+                                                put_char('.'),
                                                 close(Z).
 
+cuentameprincipio(Personaje1,Personaje2, Lugar):-rol(Personaje1),
+                                                 rol(Personaje2),
+                                                 lugar(Lugar),
+                                                 open('principio.txt',write, Z),
+                                                 set_output(Z),
+                                                 write('Aqui en'),
+                                                write(Lugar),
+                                                write('vivia'),
+                                                write(Personaje1),
+                                                write('el era feliz haciendo sus cosas solo,'),
+                                                write('un dia,'),
+                                                write(Personaje2),
+                                                writeln('paseaba por'),
+                                                write(Lugar),
+                                                write('y por observar todo el lugar no se dio cuenta y piso a'),
+                                                write(Personaje1),
+                        write('mientras este dormia.'),
+                                                put_char('.'),
+                                                close(Z).
 
-cuentameparte1(Lugar,Personaje1,Personaje2):-rol(Personaje1),
+cuentameparte1(Personaje1,Personaje2, Lugar):-rol(Personaje1),
                                               rol(Personaje2),
                                               lugar(Lugar),
                                               open('parte1.txt',write, Z),
@@ -621,13 +650,11 @@ cuentameparte1(Lugar,Personaje1,Personaje2):-rol(Personaje1),
                                               write(Personaje1),
                                               write('Deseaba regresarle la luz a el mundo,'),
                                               write(Personaje2),
-                                              write('Solo queria el poder de gobernar a todos'),
-
+                                              write('Solo quería el poder de gobernar a todos'),
                                               put_char('.'),
                                               close(Z).
 
-
-cuentameparte1(Lugar,Personaje1,Personaje2):-rol(Personaje1),
+cuentameparte1(Personaje1,Personaje2, Lugar):-rol(Personaje1),
                                               rol(Personaje2),
                                               lugar(Lugar),
                                               open('parte1.txt',write, Z),
@@ -636,27 +663,38 @@ cuentameparte1(Lugar,Personaje1,Personaje2):-rol(Personaje1),
                                               write(Personaje1),
                                               write('corrio a hablar a,'),
                                               write(Personaje2),
-                                              write('diciendole que fueran a ver que habia pasado'),
-
+                                              write('diciendole que fueran a ver que habia pasado.'),
                                               put_char('.'),
                                               close(Z).
 
+cuentameparte1(Personaje1,Personaje2, Lugar):-rol(Personaje1),
+                                              rol(Personaje2),
+                                              lugar(Lugar),
+                                              open('parte1.txt',write, Z),
+                                              set_output(Z),
+                                              write('El pobre de'),
+                                              write(Personaje1),
+                                              write('desperto de un brinco, gritando,'),
+                                              write('vio a'),
+                                              write(Personaje2),
+                                              write('y con una cara tenebrosa y furiosa lo miraba.'),
+                                              put_char('.'),
+                                              close(Z).
 
-
-cuentameparte2(Lugar,Personaje1, Personaje2):-rol(Personaje1),
+cuentameparte2(Personaje1, Personaje2, Lugar):-rol(Personaje1),
                                                rol(Personaje2),
                                                lugar(Lugar),
                                                open('parte2.txt',write, Z),
                                                set_output(Z),
-                                               write('Despues de buscar llegaron al centro de'),
+                                               write('Después de buscar llegaron al centro de'),
                                                write(Lugar),
-                                               write('Que de hecho los dos pensaban que era muy'),
-                                               writeln('Al desconocer sus metas similares, decidieron seguir juntos.'),
+                                               writeln('. Al desconocer sus metas similares, decidieron seguir juntos.'),
                                                write('Fue poco el tiempo que paso antes de que se dieran cuenta que los dos buscaban algo,'),
-                                               write('Relatandole uno al otro, entendieron que uno no podria tener el poder y que tendrian que pelear por ello.'),
+                                               write('Relatándole uno al otro, entendieron que uno no podria tener el poder y que tendrian que pelear por ello.'),
                                                put_char('.'),
                                                close(Z).
-cuentameparte2(Lugar,Personaje1, Personaje2):-rol(Personaje1),
+
+cuentameparte2(Personaje1, Personaje2, Lugar):-rol(Personaje1),
                                                rol(Personaje2),
                                                lugar(Lugar),
                                                open('parte2.txt',write, Z),
@@ -664,46 +702,69 @@ cuentameparte2(Lugar,Personaje1, Personaje2):-rol(Personaje1),
                                                write('Cuando llegaron habia un circulo formado por la luz de la luna y en medio una flor. Hacia que'),
                                                write(Lugar),
                                                write('pareciera que era de dia.'),
-                                               writeln('Cuando se acercaron a ver la flor vieron que tenía un color tan blanco como la misma luna'),
+                                               writeln('Cuando se acercaron a ver la flor vieron que tenia un color tan blanco como la misma luna'),
                                                write('Por temor de que muriera la flor en el exterior decidieron transportarla a un lugar seguro.'),
                                                put_char('.'),
                                                close(Z).
 
+cuentameparte2(Personaje1, Personaje2, Lugar):-rol(Personaje1),
+                                               rol(Personaje2),
+                                               lugar(Lugar),
+                                               open('parte2.txt',write, Z),
+                                               set_output(Z),
+                                               write('Que te pasa le dijo'),
+                                               write(Personaje1),
+                                               write('a caso no vez que dormia?,'),
+                                               write(Personaje2),
+                                               writeln('Consternado bajo la mirada y solo escuchaba el regaño.'),
+                                               put_char('.'),
+                                               close(Z).
 
-cuentameparte3(Lugar,Personaje1, Personaje2):-rol(Personaje1),
+cuentameparte3(Personaje1, Personaje2, Lugar):-rol(Personaje1),
                                                rol(Personaje2),
                                                lugar(Lugar),
                                                open('parte3.txt',write, Z),
                                                set_output(Z),
-                                               write('Como'),
-                                               write(Personaje1),
+                                               write('Como'),                                                                    write(Personaje1),
                                                write('deseaba el bien, propuso algo.'),
                                                writeln('En vez de pelear, usemos esas energias para buscar la llave y quien lo encuentre se lo queda.'),
                                                write(Personaje2),
-                                               write('siendo'),
                                                write('y con mucha confianza de sus aptitudes acepto, pensando que haria lo necesario para tener esa llave.'),
                                                writeln('Y asi es como la busqueda decisiva empezo.'),
                                                put_char('.'),
                                                close(Z).
 
-cuentameparte3(Lugar,Personaje1, Personaje2):-rol(Personaje1),
+cuentameparte3(Personaje1, Personaje2, Lugar):-rol(Personaje1),
                                                rol(Personaje2),
                                                lugar(Lugar),
                                                open('parte3.txt',write, Z),
                                                set_output(Z),
-                                               write('Como'),
-                                               write(Personaje1),
+                                              write(Personaje1),
                                                write('trajo corriendo un cubo y una pala y '),
-
                                                write(Personaje2),
-                                               write('La traspaso y se apresuro a llevarla al centro de'),
+                                               write('La traspaso y se apresuró a llevarla al centro de'),
                                                write(Lugar),
-                                               write('y aunque era'),
                                                writeln('pensaban que era lo mejor para la planta'),
                                                put_char('.'),
                                                close(Z).
 
-cuentamefinalchistoso(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
+cuentameparte3(Personaje1, Personaje2, Lugar):-rol(Personaje1),
+                                               rol(Personaje2),
+                                               lugar(Lugar),
+                                               open('parte3.txt',write, Z),
+                                               set_output(Z),
+                                               write('Cuando termino de hablar'),
+                                               write(Personaje1),
+                                               write('se dio cuenta que'),
+                                   write(Personaje2),
+                                   write('traía una bolsa llena de frutos,'),
+                                               writeln('y este le dijo, si quieres que te perdone y te deje ir sin problemas de tu bolsa has de darme,'),
+                                               write(Personaje2),
+                                               write('le contesto, es mi comida para todo el viaje pero si quieres te invito.'),
+                                               put_char('.'),
+                                               close(Z).
+
+cuentamefinalchistoso(Personaje1, Personaje2, Lugar, Final):-rol(Personaje1),
                                                       rol(Personaje2),
                                                       lugar(Lugar),
                                                       finales(Final),
@@ -718,7 +779,7 @@ cuentamefinalchistoso(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
                                                       put_char('.'),
                                                       close(Z).
 
-cuentamefinalchistoso(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
+cuentamefinalchistoso(Personaje1, Personaje2, Lugar, Final):-rol(Personaje1),
                                                       rol(Personaje2),
                                                       lugar(Lugar),
                                                       finales(Final),
@@ -734,8 +795,22 @@ cuentamefinalchistoso(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
                                                       put_char('.'),
                                                       close(Z).
 
+cuentamefinalchistoso(Personaje1, Personaje2, Lugar, Final):-rol(Personaje1),
+                                                      rol(Personaje2),
+                                                      lugar(Lugar),
+                                                      finales(Final),
+                                                      open('final.txt',write, Z),
+                                                      set_output(Z),
+                                                      write('Entonces'),
+                                                      write(Personaje1),
+                                                      write('ofrecio un trato,si tu me das tu bolsa yo te dare todo este lugar,'),
+                                                      writeln('entonces '),
+                                                      write(Personaje2),
+                                                      write('acepto, lo que el otro no sabia era que los frutos de ahi los habia sacado, cuando este se entero, se sintio estafado y detras del nuevo dueño fue, pero al comer tanto dejo un camino de basura y con una cascara de platano se topo y se resbalo. Moraleja limpia tu cochinero.'),
+                                                      put_char('.'),
+                                                      close(Z).
 
-cuentamefinaldramatico(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
+cuentamefinaldramatico(Personaje1, Personaje2, Lugar, Final):-rol(Personaje1),
                                                       rol(Personaje2),
                                                       lugar(Lugar),
                                                       finales(Final),
@@ -749,7 +824,8 @@ cuentamefinaldramatico(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
                                                       writeln('Desapareciendo.'),
                                                       put_char('.'),
                                                       close(Z).
-cuentamefinaldramatico(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
+
+cuentamefinaldramatico(Personaje1, Personaje2, Lugar, Final):-rol(Personaje1),
                                                       rol(Personaje2),
                                                       lugar(Lugar),
                                                       finales(Final),
@@ -766,8 +842,27 @@ cuentamefinaldramatico(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
                                                       put_char('.'),
                                                       close(Z).
 
+cuentamefinaldramatico(Personaje1, Personaje2, Lugar, Final):-rol(Personaje1),
+                                                      rol(Personaje2),
+                                                      lugar(Lugar),
+                                                      finales(Final),
+                                                      open('final.txt',write, Z),
+                                                      set_output(Z),
+                                                      write('Entonces'),
+                                                      write(Personaje1),
+                                                      write('ofrecio un trato,si tu me das tu bolsa yo te dare todo este lugar,'),
+                                                      writeln('entonces '),
+                                                      write(Personaje2),
+                                                      writeln('le dijo que estaba bien, pero si lo ayudaba a buscar al mounstro que vivia aqui, y el acepto'),
+                                                      write('Mientras caminaban'),
+                                                      writeln(Personaje2),
+                        write('saco un papel con las especificaciones del mounstro y al leerlo vio que era'),
+                                  write(Personaje1),
+                        write('Estando detras de el saco un cuchillo y se  quedo pensando...'),
+                                                      put_char('.'),
+                                                      close(Z).
 
-cuentamefinaltriste(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
+cuentamefinaltriste(Personaje1, Personaje2, Lugar, Final):-rol(Personaje1),
                                                       rol(Personaje2),
                                                       lugar(Lugar),
                                                       finales(Final),
@@ -785,15 +880,15 @@ cuentamefinaltriste(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
                                                       put_char('.'),
                                                       close(Z).
 
-cuentamefinaltriste(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
+cuentamefinaltriste(Personaje1, Personaje2, Lugar, Final):-rol(Personaje1),
                                                       rol(Personaje2),
                                                       lugar(Lugar),
                                                       finales(Final),
                                                       open('final.txt',write, Z),
                                                       set_output(Z),
-                                                      write('Mientras dormian escucharon a los lobos aullar y despertaron de un salto, ya que todo estaba obcureciendose en'),
+                                                      write('Mientras dormían escucharon a los lobos aullar y despertaron de un salto, ya que todo estaba oscureciéndose en'),
                                                       write(Lugar),
-                                                      write('Al ir a la flor se dieron cuenta que estaba debilitandose su luz y color, quedando gris y apagada'),
+                                                      write('Al ir a la flor se dieron cuenta que estaba debilitándose su luz y color, quedando gris y apagada'),
                                                       writeln('Y sin pensarlo dos veces, los dos empezaron a correr para devolver la flor en donde la encontraron,'),
                                                       write('pero aun con'),
                                                       write(Personaje2),
@@ -803,11 +898,31 @@ cuentamefinaltriste(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
                                                       put_char('.'),
                                                       close(Z).
 
-cuentamefinalfeliz(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
+cuentamefinaltriste(Personaje1, Personaje2, Lugar, Final):-rol(Personaje1),
                                                       rol(Personaje2),
                                                       lugar(Lugar),
                                                       finales(Final),
                                                       open('final.txt',write, Z),
+                                                      set_output(Z),
+                                                      write('Entonces'),
+                                                      write(Personaje1),
+                                                      write('ofrecio un trato,si tu me das tu bolsa yo te dare todo este lugar,'),
+                                                      writeln('entonces '),
+                                                      write(Personaje2),
+                                                      writeln('le dijo que estaba bien, pero si lo ayudaba a buscar al mounstro que vivia aqui, y el acepto'),
+                                                      write('Mientras caminaban'),
+                                                      writeln(Personaje2),
+                                                      write('saco un papel con las especificaciones del mounstro y al leerlo vio que era'),
+                                           write(Personaje1),
+                      write('Estando detras de el saco un cuchillo y se  quedo pensando... Y al recordar la recompensa, le clavo el artefacto, mientras el otro cayo de un tiron y en agonia le dijo, pense que eras diferente, pense que eras bueno, pero al final fuiste como todos.'),
+                                                      put_char('.'),
+                                                      close(Z).
+
+cuentamefinalfeliz(Personaje1, Personaje2, Lugar, Final):-rol(Personaje1),
+                                                      rol(Personaje2),
+                                                      lugar(Lugar),
+                                                      finales(Final),
+                                                      open('final.txt', write, Z),
                                                       set_output(Z),
                                                       write('Al llegar al final de'),
                                                       write(Lugar),
@@ -815,19 +930,20 @@ cuentamefinalfeliz(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
                                                       writeln('Y sin pensarlo dos veces, los dos empezaron a correr, y entre jalones y empujones llegaron hasta la piedra'),
                                                       write('Quien tomo la llave de primero fue'),
                                                       write(Personaje1),
-                                                      write('Y se escucho una voz que decia, tu ser de alma pura llevaras a este mundo a un tiempo de paz,'),
+                                                      write('Y se escuchó una voz que decía, tú, ser de alma pura llevaras a este mundo a un tiempo de paz,'),
                                                       write('al escuchar esto'),
                                                       write(Personaje2),
-                                                      write('acepto que asi debia de ser y le pedio una disculpa y seguir a su lado apoyando.'),
+                                                      write('acepto que así debía de ser y le pedio una disculpa y seguir a su lado apoyando.'),
                                                       put_char('.'),
                                                       close(Z).
-cuentamefinalfeliz(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
+
+cuentamefinalfeliz(Personaje1, Personaje2, Lugar, Final):-rol(Personaje1),
                                                       rol(Personaje2),
                                                       lugar(Lugar),
                                                       finales(Final),
                                                       open('final.txt',write, Z),
                                                       set_output(Z),
-                                                      write('Dormian cuando los desperto unos murmullos, a lo cual se levantaron y vieron todo el alrededor de'),
+                                                      write('Dormían cuando los desperto unos murmullos, a lo cual se levantaron y vieron todo el alrededor de'),
                                                       write(Lugar),
                                                       write('Y vieron al cielo y veian a una joven hecha de estrellas llorando que habia perdido la flor,'),
 
@@ -841,3 +957,25 @@ cuentamefinalfeliz(Lugar,Personaje1, Personaje2,Final):-rol(Personaje1),
                                                       write('Sera un lugar lleno de vida.'),
                                                       put_char('.'),
                                                       close(Z).
+
+cuentamefinalfeliz(Personaje1, Personaje2, Lugar, Final):-rol(Personaje1),
+                                                      rol(Personaje2),
+                                                      lugar(Lugar),
+                                                      finales(Final),
+                                                      open('final.txt',write, Z),
+                                                      set_output(Z),
+                                                      write('Entonces'),
+                                                      write(Personaje1),
+                                                      write('ofrecio un trato,si tu me das tu bolsa yo te dare todo este lugar,'),
+                                                      writeln('entonces '),
+                                                      write(Personaje2),
+                                                      writeln('le dijo que estaba bien, pero si lo ayudaba a buscar al mounstro que vivia aqui, y el acepto'),
+                                                      write('Mientras caminaban'),
+                                                      writeln(Personaje2),
+                       write('saco un papel con las especificaciones del mounstro y al leerlo vio que era'),
+                       write(Personaje1),
+                       write('Estando detras de el saco un cuchillo y se  quedo pensando... pero el sabia que el otro no era malo solo tosco, arrepentido solto el cuchillo y le explico las cosas, y le dijo que jamas regresaria y que con el se quedaria.'),
+                                                      put_char('.'),
+                                                      close(Z).
+
+
